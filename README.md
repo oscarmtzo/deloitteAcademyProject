@@ -83,14 +83,16 @@ Spring Data JPA will serve us to tell it that our POJO - Plain Old Java Object, 
 @Table(name="tour_package")
 @Entity
 public class TourPackage implements Serializable {
-@Id
-private String code;
-@Column
-private String name;
-protected TourPackage() {
-}
+    @Id
+    private String code;
+    @Column
+    private String name;
+    
+    protected TourPackage() {
+    }
 
-// getters, setters and toString()
+    // getters, setters and toString()
+}
 ```
 
   b. In addition to ``TourPackage``, before creation of **Tour entity** it is needed 2 enum classes:
