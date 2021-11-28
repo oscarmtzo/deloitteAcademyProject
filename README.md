@@ -189,5 +189,26 @@ tours.
 
 ### Creating Spring Boot Restful Services
 
+Divided into 3 layers: **Repository**, **Service** and **Controller**.
+This helps to segregate the RESTful application responsibilities and enabling loose coupling between the objects.
+#### Repository
+A repository is an abstraction brought by Spring Boot that let us interact with the ```database``` to reduce boilerplate code to perform several activities on the object that includes:
+- deletion,
+- storage,
+- retrieval,
+- storing list at a single time, 
+- searching from the database according to a specific criteria.
+
+Inserting the rest core dependency on ``pom.xml`` file and loading Maven changes will allow us to use such dependency in our code later on:
+```
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-data-rest</artifactId>
+</dependency>
+```
+
+#### Creating TourPackage Repository
+In ```TourPackageRepository```  we need to override some 
+
 ## Frontend
 - Added an index.html file on the path ``./src/main/resources/static``.
